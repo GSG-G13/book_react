@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../card/Card";
 
 class FetchData extends React.Component {
     state = {
@@ -17,20 +18,21 @@ class FetchData extends React.Component {
     }
 
     render() {
+        const arr = [this.state.data]
         return (
             <div>
-             
+                <Card data = {arr}/>
             </div>
         )
     }
 
 }
 function getData(search) {
-
+    
     const key = 'AIzaSyDOEa3KwP6_wmN4JNjNxL1rkl2kRZwqkzk';
     return fetch(`https://www.googleapis.com/books/v1/volumes?q=${search}+subject&&api_key=${key}`)
         .then((result) => result.json())
-    .then((data)=>console.log(data))
+    // .then((data)=>console.log(data))
         
     
 }
