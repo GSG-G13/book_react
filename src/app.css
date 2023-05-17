@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: #cdcdcd;
+    background: linear-gradient(45deg, rgba(0, 150, 136, 1) 30%, rgba(5, 175, 93, 0.8436624649859944) 100%);
     min-height: 100vh;
 }
 
@@ -63,6 +63,11 @@ body {
     font-weight: 400;
     margin-top: 2rem;
     font-family: 'PT Sans Narrow', sans-serif;
+}
+.title-b{
+    width: 200px;
+    margin: 50px auto;
+   color:#eee
 }
 
 /* End Header Section */

@@ -17,8 +17,10 @@ function App() {
           <h2 className="desc">Welcome To Our Book App, Choose your Book And Start Reading</h2>
         </div>
       </div>
+      <h1 className='title-b'>Search Books</h1>
       <Search />
     </section>
+    
   );
 }
 

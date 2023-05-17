@@ -10,6 +10,7 @@ class Card extends React.Component {
 
         return (
             <>
+                
                 {this.props?.data[0]?.items?.map((e, i) =>
                     <div className="book" key={i}>
                         <div className="book-banner">
