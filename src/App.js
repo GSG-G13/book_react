@@ -3,7 +3,7 @@ import Search from './components/search/Search';
 import './app.css'
 function App() {
   return (
-    <div className="App">
+    <section className="App">
       <div className="header">
         <div className="container">
             <a className="logo" href="index.html">
@@ -18,7 +18,7 @@ function App() {
         </div>
     </div>
     <Search />
-    </div>
+    </section>
   );
 }
 

@@ -27,9 +27,10 @@ class FetchData extends React.Component {
 
         console.log(arr,"hhhhhhh");
         return (
-            <div>
-                <Card data = {arr}/>
+            <div className="books-container">
+                <Card data={arr} />
             </div>
+                
         )
     }
 
