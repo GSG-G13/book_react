@@ -9,7 +9,7 @@ Book App is an application specially built to find your favourite books info. Th
 
 ## Live Website 📺
 
-You can see our demo website [Here](https://[gsg-g13.github.io/book_react/](https://main--kaleidoscopic-beijinho-5d1b33.netlify.app/)).
+You can see our demo website [Here](https://main--kaleidoscopic-beijinho-5d1b33.netlify.app/)).
 
 
 ---
