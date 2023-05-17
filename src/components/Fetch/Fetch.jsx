@@ -20,23 +20,20 @@ class FetchData extends React.Component {
         const { search } = this.props;
         getData(search).then((data) => this.setState({ data }))
     }
-      
+
     render() {
         const arr = [this.state.data]
-        console.log("aa", arr[0]);
-
-        console.log(arr,"hhhhhhh");
         return (
             <div className="books-container">
                 <Card data={arr} />
             </div>
-                
+
         )
     }
 
 }
 function getData(search) {
-    
+
     const key = 'AIzaSyDOEa3KwP6_wmN4JNjNxL1rkl2kRZwqkzk';
     return fetch(`https://www.googleapis.com/books/v1/volumes?q=${search}+subject&&api_key=${key}`)
         .then((result) => result.json())
