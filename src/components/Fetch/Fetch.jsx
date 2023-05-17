@@ -3,7 +3,7 @@ import Card from "../card/Card";
 
 class FetchData extends React.Component {
     state = {
-        data: null
+        data: []
     }
     componentDidMount() {
         const { search } = this.props;
@@ -16,9 +16,16 @@ class FetchData extends React.Component {
             getData(search).then((data) => this.setState({ data }))
         }
     }
-
+    componentWillUnmount() {
+        const { search } = this.props;
+        getData(search).then((data) => this.setState({ data }))
+    }
+      
     render() {
         const arr = [this.state.data]
+        console.log("aa", arr[0]);
+
+        console.log(arr,"hhhhhhh");
         return (
             <div>
                 <Card data = {arr}/>
@@ -32,9 +39,6 @@ function getData(search) {
     const key = 'AIzaSyDOEa3KwP6_wmN4JNjNxL1rkl2kRZwqkzk';
     return fetch(`https://www.googleapis.com/books/v1/volumes?q=${search}+subject&&api_key=${key}`)
         .then((result) => result.json())
-    // .then((data)=>console.log(data))
-        
-    
 }
 
 export default FetchData;
